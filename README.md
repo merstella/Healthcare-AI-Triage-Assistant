@@ -154,6 +154,28 @@ Outputs:
 
 Method notes: [docs/method_review.md](docs/method_review.md)
 
+## Final Benchmark Snapshot (2026-03-12)
+Final full run artifact:
+- `artifacts/advanced_metrics_final.json`
+- `artifacts/advanced_model_bundle_final.joblib`
+
+Configuration selected by CV:
+- Model family: `logreg_embedding`
+- Calibration: `none`
+- Emergency threshold: `0.1525`
+
+Holdout results (fixed holdout, `n=222`):
+- Accuracy: `0.6171`
+- Macro-F1: `0.4387`
+- Emergency recall: `0.9593`
+- Medical cost (`FN=10`, `FP=1`): `118.0`
+
+5-fold CV family comparison (train split):
+- `logreg_tfidf`: macro-F1 `0.4627`, emergency recall `0.9511`
+- `logreg_embedding`: macro-F1 `0.4692`, emergency recall `0.9511`
+- `lightgbm_embedding`: macro-F1 `0.3806`, emergency recall `0.9511`
+- `catboost_embedding`: macro-F1 `0.4247`, emergency recall `0.9532`
+
 ## Offline RAG + Agent Demo
 1. Build KB index:
 ```bash

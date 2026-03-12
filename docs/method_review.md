@@ -76,9 +76,3 @@ Artifacts and scripts:
 - Slice-level metrics on small-support groups can be unstable.
 - Current retrieval quality uses TF-IDF; dense retrievers may improve recall.
 - This is not validated for real clinical deployment.
-
-## 8. Recommended Next Steps
-- Add confidence intervals (bootstrap) for macro-F1 and emergency recall.
-- Add calibration diagnostics (ECE, reliability plots).
-- Expand fairness analysis with minimum-support rules and uncertainty bounds.
-- Add data/feature drift monitoring for post-deployment safety.

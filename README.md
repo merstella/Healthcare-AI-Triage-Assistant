@@ -1,6 +1,10 @@
 # Healthcare AI Triage Assistant
 
 A production-oriented machine learning project for emergency triage recommendation, with deterministic safety policy, advanced benchmarking, and an offline RAG + Agent demo.
+##  Demo CLI
+```bash
+python3 scripts/demo.py --model-path artifacts/triage_model.joblib
+```
 
 ## Overview
 This project predicts one of three triage outcomes from emergency intake signals:
@@ -118,10 +122,6 @@ Notes:
 - Use `artifacts/metrics.json` from `train.py` as the main holdout performance report.
 - `evaluate.py` is useful for sanity-checking the model on any provided dataset.
 
-## Recruiter Demo CLI
-```bash
-python3 scripts/demo.py --model-path artifacts/triage_model.joblib
-```
 
 The demo prints class probabilities and the final recommendation.
 The recommendation uses the tuned emergency-threshold policy saved in model metadata.

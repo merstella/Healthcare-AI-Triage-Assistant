@@ -1,6 +1,11 @@
 # Healthcare AI Triage Assistant
 
 A production-oriented machine learning project for emergency triage recommendation, with deterministic safety policy, advanced benchmarking, and an offline RAG + Agent demo.
+This is the capstone project I've done to complete the course "Google 5-Day GenAI Intensive" in May 2025. The output of the capstone was a notebook, but I've recently refactored it and optimize the method for better experience.
+
+## Introdction about the project 
+[Click here](https://www.linkedin.com/posts/kiran%7Emitra_genai-googlecloud-vertexai-activity-7320829462663557122-3gJb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADknXk0Brrx0NMebd-OsRJU8HGNjRdubwec)
+
 ##  Demo CLI
 ```bash
 python3 scripts/demo.py --model-path artifacts/triage_model.joblib
